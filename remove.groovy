@@ -1,7 +1,7 @@
 import java.util.regex.Matcher
 import groovy.io.FileType
 
-new File("/home/jfuchs/git/avviso-web/web/src/main/webapp/scripts").eachFileRecurse (FileType.FILES) { file ->
+new File("PATH").eachFileRecurse (FileType.FILES) { file ->
     content = ""
     content = file.text
     init(content, file)
